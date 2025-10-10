@@ -26,4 +26,4 @@ Place the appropriate script inside the target part or model. Customize the para
 
 ---
 
-(c) 2025 Pank, Copilot
+(c) 2025 Pank, Copilot. Shell License. See Shell_License.md for details.
