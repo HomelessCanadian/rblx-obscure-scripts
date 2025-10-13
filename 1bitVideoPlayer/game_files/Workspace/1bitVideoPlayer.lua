@@ -7,7 +7,6 @@
     - Place all frame chunks (fg_aaa, fg_aab, ...) and Manifest inside "Video data" in ReplicatedStorage.
     - Manifest must define: total_frames, chunk_size, width, height, fps.
     - For custom videos, you'll need to encode your own frames. Visit https://github.com/HomelessCanadian/rblx-obscure-scripts and look for "1bitVideoPlayer"
-    - This model includes precompiled data for "Bad Apple!!" (https://www.youtube.com/watch?v=FtutLA63Cp8)
 
   🧱 GRID: 
     - Creates a SurfaceGUI part to render a 256x144 raster screen with black and white capabilities
