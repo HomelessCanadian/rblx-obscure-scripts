@@ -2,8 +2,8 @@
 A collection of roblox-specific lua utilities
 ---
 ToC
-1. [RGB script][https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#roblox-rgb-keyboard-scripts]
-2. [1-bit Video Player][https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#%EF%B8%8F-1-bit-video-player-for-roblox-studio]
+1. [RGB script](https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#roblox-rgb-keyboard-scripts)
+2. [1-bit Video Player](https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#%EF%B8%8F-1-bit-video-player-for-roblox-studio)
 ---
 ---
 # Roblox RGB Keyboard Scripts
