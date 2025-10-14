@@ -15,7 +15,6 @@
   🎞️ PLAYBACK:
     - Decodes compressed hex frames from ModuleScripts.
     - Updates grid at specified FPS.
-    - Controller GUI set up for LocalScript. Global scripts will need remotes.
     
   This code is open source. Feel free to distribute and modify as needed. See Github for more info and support. Please retain this helper message if distributing.
 --]]
@@ -116,6 +115,7 @@ local function initializeGrid()
             end
         end
         gridReady = true
+        isPlaying = true -- temporary while I wire in buttons
         print("✅ GUI grid ready. Starting playback.")
     end)
 end
