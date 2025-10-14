@@ -1,6 +1,9 @@
 # rblx-obscure-scripts
 A collection of roblox-specific lua utilities
 ---
+ToC
+1. [RGB script](https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#roblox-rgb-keyboard-scripts)
+2. [1-bit Video Player](https://github.com/HomelessCanadian/rblx-obscure-scripts?tab=readme-ov-file#%EF%B8%8F-1-bit-video-player-for-roblox-studio)
 ---
 ---
 # Roblox RGB Keyboard Scripts
@@ -61,12 +64,11 @@ pip install opencv-python pillow pyautogui pyperclip keyboard
 Use `videoToLua16.py` to extract and encode frames:
 
 ```bash
-python videoToLua16.py input.mp4 -o output.lua --fps 30 --threshold 128 --width 256 --height 144
+python videoToLua16.py input.mp4 -o output.lua --threshold 128 --width 256 --height 144
 ```
 
 - `input.mp4`: your source video  
 - `output.lua`: full-frame hex strings  
-- `--fps`: target playback rate  
 - `--threshold`: grayscale cutoff (0–255)  
 - `--width` / `--height`: resolution (must match your renderer)
 
@@ -77,7 +79,7 @@ python videoToLua16.py input.mp4 -o output.lua --fps 30 --threshold 128 --width 
 Use `luaBitmapChunker16.py` to split the output into Studio-safe blobs:
 
 ```bash
-python luaBitmapChunker16.py output.lua -o assets/video_chunks
+python luaBitmapChunker16.py output.lua -o "game_files/ReplicatedStorage/Video data"
 ```
 
 - Default chunk size: 4 frames per file  
@@ -91,7 +93,7 @@ python luaBitmapChunker16.py output.lua -o assets/video_chunks
 Use `studioMassImport.py` to automate the import:
 
 ```bash
-python studioMassImport.py assets/video_chunks
+python studioMassImport.py "game_files/ReplicatedStorage/Video data"
 ```
 
 - Automatically copies Lua chunks to clipboard  
